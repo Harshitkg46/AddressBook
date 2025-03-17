@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AddressbookappApplication {
+class AddressBookApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AddressbookappApplication.class, args);
+        SpringApplication.run(AddressBookApplication.class, args);
     }
 
 }
