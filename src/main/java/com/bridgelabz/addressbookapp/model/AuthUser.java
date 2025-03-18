@@ -1,10 +1,7 @@
 package com.bridgelabz.addressbookapp.model;
 
 import com.bridgelabz.addressbookapp.dto.AuthUserDTO;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,6 +12,7 @@ import lombok.Setter;
 @Data
 @NoArgsConstructor
 @Entity
+@Table(name = "user_db")
 public class AuthUser {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

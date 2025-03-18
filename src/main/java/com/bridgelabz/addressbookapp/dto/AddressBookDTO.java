@@ -3,9 +3,15 @@ package com.bridgelabz.addressbookapp.dto;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 public class AddressBookDTO {
 
+    // Setters
+    // Getters
     @NotBlank(message = "Name cannot be empty")
     private String name;
 
@@ -25,40 +31,6 @@ public class AddressBookDTO {
         this.name = name;
         this.address = address;
         this.phoneNumber = phoneNumber;
-        this.email = email;
-    }
-
-    // Getters
-    public String getName() {
-        return name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    // Setters
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public void setEmail(String email) {
         this.email = email;
     }
 
